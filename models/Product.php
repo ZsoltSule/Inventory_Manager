@@ -7,7 +7,9 @@
         }
 
         public function getAll(){
-            $query = "SELECT * FROM products INNER JOIN categories ON products.category_id = categories.id"; 
+            $query = "SELECT products.*, categories.name AS category_name
+            FROM products
+            INNER JOIN categories ON products.category_id = categories.id";
 
             $stmt = $this->conn->prepare($query);
             $stmt->execute();
@@ -48,6 +50,13 @@
              $stmt->execute([
                 ':id' => $id
             ]);
+        }
+        
+        public function getById($id){
+            $query = "SELECT * FROM products WHERE id = :id";
+            $stmt = $this->conn->prepare($query);
+            $stmt->execute([':id' => $id]);
+            return $stmt->fetch(PDO::FETCH_ASSOC);
         }
     }
 ?>

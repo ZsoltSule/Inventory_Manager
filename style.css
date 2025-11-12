@@ -1,0 +1,86 @@
+body{
+    background-color:hsl(0, 0%, 15%);
+}
+h1{
+    text-align: center;
+    color:hsl(83, 100%, 55%);
+}
+table {
+    border: 1px solid hsl(80, 100%, 55%);
+    box-shadow: 5px 5px 5px hsl(80, 100%, 55%);
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 80%;
+}
+th, td {
+    border: 3px solid hsl(135, 100%, 20%);
+    padding: 8px;
+    text-align: left;
+    background-color: hsl(0, 0%, 75%);
+}
+th {
+    background-color: hsl(0, 0%, 90%);
+}
+a {
+    margin-right: 5px;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: hsl(80, 100%, 55%);
+    color: hsl(0, 0%, 15%);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.btn:hover {
+    background-color: hsl(80, 100%, 45%);
+}
+.del_btn{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: hsl(0, 100%, 55%);
+    color: hsl(0, 0%, 15%);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.del_btn:hover {
+    background-color: hsl(0, 100%, 45%);
+}
+.general {
+    width: 400px; 
+    background-color: hsl(0, 0%, 25%);
+    margin: 40px auto; 
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px hsl(80, 100%, 45%);
+    color: hsl(0, 0%, 95%);
+}
+.general label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+.general input, .general select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+    box-sizing: border-box;
+}
+.general button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    background-color: hsl(83, 100%, 55%);
+    border: none;
+    color: hsl(0, 0%, 15%);
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.general button:hover {
+    background-color: hsl(83, 100%, 45%);
+}
