@@ -13,27 +13,6 @@ Inventory Manager is a simple web application for managing products and categori
 - Data stored in a MySQL database
 - Basic styling with CSS
 
-## Project Structure
-
-InventoryManager/
-│
-├─ controllers/ # Handles user actions and requests
-│ └─ ProductController.php
-│
-├─ models/ # Handles database queries and business logic
-│ └─ Product.php
-│
-├─ views/ # HTML pages
-│ ├─ products-list.php
-│ ├─ create-product.php
-│ └─ edit-product.php
-│
-├─ Classes/ # Database connection
-│ └─ Dbh.php
-│
-├─ style.css # CSS for styling pages
-└─ index.php # Main entry point for routing actions
-
 ## Installation
 
 1. Clone the repository:
